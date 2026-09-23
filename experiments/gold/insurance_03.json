@@ -1,0 +1,167 @@
+{
+  "doc": "docs/insurance/insurance_03.docx",
+  "domain": "insurance",
+  "state_root": "data.current_claim.formData",
+  "fields": [
+    {
+      "field_id": "insured-name",
+      "label": "Insured Person Name",
+      "expected": "Lau Ho Yin",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "id-type",
+      "label": "ID Type",
+      "expected": "national-id",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "id-number",
+      "label": "ID Number",
+      "expected": "M3398120",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "phone",
+      "label": "Phone Number",
+      "expected": "5502 6647",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "accident-time",
+      "label": "Incident Time",
+      "expected": "2026-03-09",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "accident-situation",
+      "label": "Nature of Claim",
+      "expected": "common-accident",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-hospital",
+      "label": "Diagnosis Hospital",
+      "expected": "Yan Chai Hospital",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-injury-area",
+      "label": "Injury Area",
+      "expected": "Right wrist",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-severity",
+      "label": "Severity",
+      "expected": "minor",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-summary",
+      "label": "Diagnosis Summary",
+      "expected": "Undisplaced fracture of right distal radius; cast immobilisation",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-examination-fee",
+      "label": "Examination and Treatment Fee",
+      "expected": "3120.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-medication-fee",
+      "label": "Medication Fee",
+      "expected": "540.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "common-service-fee",
+      "label": "Medical Service Fee",
+      "expected": "890.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "payee-name",
+      "label": "Payee Name",
+      "expected": "Lau Ho Yin",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "payee-phone",
+      "label": "Payee Phone Number",
+      "expected": "5502 6647",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "account-relationship",
+      "label": "Relationship to Insured",
+      "expected": "self",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "bank-card",
+      "label": "Bank Card Number",
+      "expected": null,
+      "mode": "ASK_USER",
+      "reason": "The document records the account as closed and the replacement number as not yet provided.",
+      "user_answer": "003-771264-590",
+      "expected_after_answer": "003-771264-590"
+    },
+    {
+      "field_id": "traffic-location",
+      "label": "Accident Location",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the traffic-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "traffic-motor",
+      "label": "Motor Vehicle Involved",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the traffic-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "traffic-police-report",
+      "label": "Police Report Number",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the traffic-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "illness-hospital",
+      "label": "Diagnosis Hospital",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the ordinary-illness branch, which this claim did not select"
+    },
+    {
+      "field_id": "illness-summary",
+      "label": "Diagnosis Summary",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the ordinary-illness branch, which this claim did not select"
+    },
+    {
+      "field_id": "file-input",
+      "label": "Upload supporting documents",
+      "expected": null,
+      "mode": "USER_ONLY",
+      "reason": "The extension has no file-upload action; builder.ts only reports that an element is a file uploader."
+    },
+    {
+      "field_id": "signature-canvas",
+      "label": "Signature",
+      "expected": null,
+      "mode": "USER_ONLY",
+      "reason": "Drawing on a canvas is outside the action space."
+    }
+  ],
+  "notes": [
+    "The incident date is entered one glyph per box as DD/MM/YYYY; the web field is an HTML date input and needs YYYY-MM-DD.",
+    "Fee fields are numeric inputs: thousands separators must be dropped.",
+    "Sections C(1), C(2) and C(3) are three branches; only the one matching the ticked Nature of Claim carries values. Filling a shaded branch counts as an unsupported value.",
+    "'Not Applicable' is pre-printed in structurally void cells and must not be copied into the web form."
+  ]
+}

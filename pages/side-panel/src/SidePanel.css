@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Remove unused classes: .App, .App-logo, .App-header */
+
+code {
+  background: rgba(37, 99, 235, 0.08);
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  color: #2563eb;
+}
+
+/* Dark mode support for code */
+@media (prefers-color-scheme: dark) {
+  code {
+    background: rgba(30, 58, 138, 0.4);
+    color: #7dd3fc;
+  }
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+  }
+}
+
+/* Used classes from the component */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+/* Dark mode header border */
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(14, 165, 233, 0.3);
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header-icon {
+  color: #71717a;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+}
+
+.header-icon:hover {
+  color: #2563eb;
+  opacity: 1;
+}
+
+.header-icon:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.send-button {
+  color: #2563eb;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+}
+
+.send-button:hover {
+  color: #3b82f6;
+  opacity: 1;
+}
+
+.send-button:disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Add these styles to your existing CSS */
+.scrollbar-gutter-stable {
+  scrollbar-gutter: stable;
+}
+
+/* Optional: Style the scrollbar for webkit browsers */
+.scrollbar-gutter-stable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-track {
+  background: #f1f5f9; /* sky-50 */
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 4px;
+}
+
+.scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Dark mode scrollbar for scrollbar-gutter-stable */
+@media (prefers-color-scheme: dark) {
+  .scrollbar-gutter-stable::-webkit-scrollbar-track {
+    background: #1e293b; /* slate-800 */
+  }
+
+  .scrollbar-gutter-stable::-webkit-scrollbar-thumb {
+    background: #475569; /* slate-600 */
+  }
+
+  .scrollbar-gutter-stable::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* slate-500 */
+  }
+}
+
+/* Dark mode text and background colors */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-text {
+    color: #e2e8f0 !important; /* slate-200 */
+  }
+
+  .dark-mode-bg {
+    background-color: #1e293b !important; /* slate-800 */
+  }
+
+  .dark-mode-border {
+    border-color: #475569 !important; /* slate-600 */
+  }
+}
+
+/* KONI mascot — a pixel-art swan that waddles along the top of the chat */
+.koni-mascot-lane {
+  position: relative;
+  flex: 0 0 auto;
+  height: 56px;
+  width: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.koni-mascot {
+  position: absolute;
+  bottom: 0;
+  width: 56px;
+  height: 56px;
+  transition: left 150ms linear;
+}
+
+.koni-hopper {
+  width: 100%;
+  height: 100%;
+}
+
+.koni-hopper.koni-hopping {
+  animation: koniHop 560ms ease-in-out;
+}
+
+.koni-mascot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+@keyframes koniHop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-18px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .koni-mascot {
+    transition: none;
+  }
+  .koni-hopper.koni-hopping {
+    animation: none;
+  }
+}

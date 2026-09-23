@@ -1,0 +1,28 @@
+{
+  "doc": "insurance_03x2",
+  "pages": 57,
+  "words": 23692,
+  "paragraphs_nonempty": 526,
+  "tables": 59,
+  "table_rows": 313,
+  "form_first_page": 34,
+  "specimen_first_page": 31,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the 28-36-page original",
+  "gold_modes": {
+    "AUTO": 16,
+    "ASK_USER": 1,
+    "MUST_BE_EMPTY": 5,
+    "USER_ONLY": 2
+  },
+  "sha256_docx": "0e4ef08a25af08004de74541da12b4a7cb015435e68179e30f5c8fe55cd7d4d2",
+  "sha256_pdf": "639a9c3117dac69de6cfb6b3985719476517fdd18dac569b2439f00408235644",
+  "sha256_gold": "4d51021369cd51a56d8fb0afbd4897a3d7fc08f441e216a22a6735ee8d6037a8",
+  "scaled_from": "insurance_13",
+  "scale": "x2",
+  "padding_chunks": [
+    "A"
+  ],
+  "text_path_chars": 151276,
+  "top_level_tables": 59
+}

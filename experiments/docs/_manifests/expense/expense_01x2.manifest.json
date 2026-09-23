@@ -1,0 +1,25 @@
+{
+  "doc": "expense_01x2",
+  "pages": 51,
+  "words": 20754,
+  "paragraphs_nonempty": 446,
+  "tables": 44,
+  "table_rows": 319,
+  "form_first_page": 30,
+  "specimen_first_page": 27,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the 28-36-page original",
+  "gold_modes": {
+    "AUTO": 40
+  },
+  "sha256_docx": "272f052f43c8ed93078e9c72e33f1bfb4c299d169213cef7e2f77b2bfffc5eb8",
+  "sha256_pdf": "ba769275fbc17e0be9e1fbddaf4ceeb528aa59dd324a6c91088eb911bcf3f998",
+  "sha256_gold": "474bb5e926ede63abfea87d1e1d2772ec357946c21a116676725178f94bfd611",
+  "scaled_from": "expense_11",
+  "scale": "x2",
+  "padding_chunks": [
+    "A"
+  ],
+  "text_path_chars": 132238,
+  "top_level_tables": 44
+}

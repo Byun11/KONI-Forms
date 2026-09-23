@@ -1,0 +1,18 @@
+{
+  "doc": "crm_01x2",
+  "pages": 44,
+  "words": 17177,
+  "paragraphs_nonempty": 376,
+  "tables": 61,
+  "table_rows": 348,
+  "form_first_page": 25,
+  "specimen_first_page": 22,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the other length variants",
+  "gold_modes": {
+    "AUTO": 13
+  },
+  "sha256_docx": "592f6f128a6edf58d2f0ddaf9b0b6278c3e4965460d3c7fdf62db96c5fbdce93",
+  "sha256_pdf": "ca8a87fc59ae08cfec4db22e23a2d246b86a69315a5b596db86894236b8ce072",
+  "sha256_gold": "58a45ce739cd0c2b671583e87e975c283ad2dedf2d3d2e922331e42409790c37"
+}

@@ -1,0 +1,20 @@
+{
+  "doc": "expense_02x2",
+  "pages": 51,
+  "words": 20727,
+  "paragraphs_nonempty": 446,
+  "tables": 44,
+  "table_rows": 318,
+  "form_first_page": 30,
+  "specimen_first_page": 27,
+  "gold_value_mentions_outside_form": {
+    "Meals and incidentals": 1
+  },
+  "hard_negative": "same specimen form as the other length variants",
+  "gold_modes": {
+    "AUTO": 40
+  },
+  "sha256_docx": "22fbee83873fc1e340d1d8fd2aa6e523a41517dafa67730447470cfecbb871a3",
+  "sha256_pdf": "38f951c1935767253a52a73e9f1f5db1cd96c1478b6a843fb2a8e9d6720ed114",
+  "sha256_gold": "be2f622a1c23a1801ba9cbe06edd91671e0c219520f03fbaa48e8a9648648c82"
+}

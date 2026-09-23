@@ -1,0 +1,20 @@
+{
+  "doc": "insurance_02x1",
+  "pages": 36,
+  "words": 11898,
+  "paragraphs_nonempty": 297,
+  "tables": 57,
+  "table_rows": 305,
+  "form_first_page": 22,
+  "specimen_first_page": 19,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the other length variants",
+  "gold_modes": {
+    "AUTO": 14,
+    "MUST_BE_EMPTY": 9,
+    "USER_ONLY": 2
+  },
+  "sha256_docx": "87c936281b49af0a2b5a4ccee4f7cdd17a46d986227b91d625661de972bbfb9e",
+  "sha256_pdf": "6fa5b4e69dbb7adcb2928ac7c3a1fb31148a03e9be16101adc506d3883d90f39",
+  "sha256_gold": "4725e4932db9aee599023cc20fd18b42086861a22461a9ef9c4c373fb6f3364a"
+}

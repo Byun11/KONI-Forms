@@ -1,0 +1,24 @@
+{
+  "doc": "crm_03x1",
+  "pages": 28,
+  "words": 8712,
+  "paragraphs_nonempty": 242,
+  "tables": 54,
+  "table_rows": 305,
+  "form_first_page": 16,
+  "specimen_first_page": 13,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "crm specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 10,
+    "ASK_USER": 3
+  },
+  "sha256_docx": "80a3bd54a4b982a40adde234e6eb89cd54b59b0a744f9deab6fd4bebec8b21c6",
+  "sha256_pdf": "379dc89f8568ac2974aeedc15524d258172d949a670553f1e016864df8f55df9",
+  "sha256_gold": "955744640f06ff9afd7a26a1bc8b786f1b5b0bdb18a74d65a20616a92923487d",
+  "long_variant_of": "crm_03",
+  "option_list_mentions_outside_form": {
+    "Packaging and Distribution": 1,
+    "Reseller": 5
+  }
+}

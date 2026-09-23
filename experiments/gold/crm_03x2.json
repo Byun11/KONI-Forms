@@ -1,0 +1,111 @@
+{
+  "doc": "docs/crm/crm_03x2.docx",
+  "domain": "crm",
+  "state_root": "data.accounts[] (new record: accountId not matching 'account-<n>')",
+  "fields": [
+    {
+      "field_id": "name",
+      "label": "Account Name",
+      "expected": "Ardent Packaging Solutions LLC",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "phone",
+      "label": "Phone",
+      "expected": "(555) 660-4412",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "website",
+      "label": "Website",
+      "expected": "www.ardentpackaging.com",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "type",
+      "label": "Type",
+      "expected": "Reseller",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "industry",
+      "label": "Industry",
+      "expected": "Packaging and Distribution",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "revenue",
+      "label": "Annual Revenue",
+      "expected": 13750000,
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "employees",
+      "label": "Employees",
+      "expected": 95,
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "description",
+      "label": "Description",
+      "expected": "Regional distributor of protective packaging materials serving third-party logistics providers.",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingState",
+      "label": "Billing State",
+      "expected": "OH",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingCountry",
+      "label": "Billing Country",
+      "expected": "USA",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingStreet",
+      "label": "Billing Street",
+      "expected": null,
+      "mode": "ASK_USER",
+      "reason": "Two office addresses are on record and the form has a single billing address block.",
+      "user_answer": "2150 Distribution Drive, Building 4",
+      "expected_after_answer": "2150 Distribution Drive, Building 4"
+    },
+    {
+      "field_id": "billingCity",
+      "label": "Billing City",
+      "expected": null,
+      "mode": "ASK_USER",
+      "reason": "Two office addresses are on record and the form has a single billing address block.",
+      "user_answer": "Cincinnati",
+      "expected_after_answer": "Cincinnati"
+    },
+    {
+      "field_id": "billingZip",
+      "label": "Billing Zip",
+      "expected": null,
+      "mode": "ASK_USER",
+      "reason": "Two office addresses are on record and the form has a single billing address block.",
+      "user_answer": "45241",
+      "expected_after_answer": "45241"
+    }
+  ],
+  "not_scored": [
+    "shippingStreet",
+    "shippingCity",
+    "shippingState",
+    "shippingZip",
+    "shippingCountry",
+    "accountId",
+    "ownerId",
+    "createdDate",
+    "modifiedDate"
+  ],
+  "notes": [
+    "revenue/employees are stored as numbers, not strings.",
+    "type defaults to 'Customer' when unset; no case uses Customer, so a missed dropdown is detectable.",
+    "The requested credit limit and monthly spend belong to the credit application, not to the CRM account record; copying them in counts as an unsupported value."
+  ],
+  "variant_note": "length variant x2 of crm_03; built as crm_13x2"
+}

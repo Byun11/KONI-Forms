@@ -1,0 +1,30 @@
+{
+  "doc": "expense_03x1",
+  "pages": 33,
+  "words": 10489,
+  "paragraphs_nonempty": 282,
+  "tables": 41,
+  "table_rows": 298,
+  "form_first_page": 20,
+  "specimen_first_page": 17,
+  "gold_value_mentions_outside_form": {
+    "Meals and incidentals": 1
+  },
+  "hard_negative": "expense specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 32,
+    "ASK_USER": 1
+  },
+  "sha256_docx": "58de51131250332da63474617814b0b81ecf29fb9ca0611294b4eeea2b510849",
+  "sha256_pdf": "a97a527837b359f0c2f0d059c2754d50112d171cf3b3fca7b8310fd3793a6ff4",
+  "sha256_gold": "5226ef7bfec0c70f1985be129601328ca55f085e66bed34b4a169325fdf5d3e3",
+  "long_variant_of": "expense_03",
+  "option_list_mentions_outside_form": {
+    "1.0000": 2,
+    "Australia - Melbourne": 2,
+    "Conference - Other Conference Expenses": 2,
+    "Travelling - Accommodation": 3,
+    "Travelling - Airfare (Basic Economy Class)": 3,
+    "Travelling - Subsistence Allowance": 3
+  }
+}

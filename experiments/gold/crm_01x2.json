@@ -1,0 +1,102 @@
+{
+  "doc": "docs/crm/crm_01x2.docx",
+  "domain": "crm",
+  "state_root": "data.accounts[] (new record: accountId not matching 'account-<n>')",
+  "fields": [
+    {
+      "field_id": "name",
+      "label": "Account Name",
+      "expected": "Northwind Components Ltd.",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "phone",
+      "label": "Phone",
+      "expected": "(555) 412-8890",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "website",
+      "label": "Website",
+      "expected": "www.northwindcomponents.com",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "type",
+      "label": "Type",
+      "expected": "Prospect",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "industry",
+      "label": "Industry",
+      "expected": "Electronics Manufacturing",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "revenue",
+      "label": "Annual Revenue",
+      "expected": 24000000,
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "employees",
+      "label": "Employees",
+      "expected": 180,
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "description",
+      "label": "Description",
+      "expected": "Contract manufacturer of precision connectors and cable assemblies for the industrial automation sector.",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingStreet",
+      "label": "Billing Street",
+      "expected": "4820 Meridian Parkway, Suite 300",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingCity",
+      "label": "Billing City",
+      "expected": "Raleigh",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingState",
+      "label": "Billing State",
+      "expected": "NC",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingZip",
+      "label": "Billing Zip",
+      "expected": "27606",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "billingCountry",
+      "label": "Billing Country",
+      "expected": "USA",
+      "mode": "AUTO"
+    }
+  ],
+  "not_scored": [
+    "shippingStreet",
+    "shippingCity",
+    "shippingState",
+    "shippingZip",
+    "shippingCountry",
+    "accountId",
+    "ownerId",
+    "createdDate",
+    "modifiedDate"
+  ],
+  "notes": [
+    "revenue/employees are stored as numbers, not strings.",
+    "type defaults to 'Customer' when unset; no case uses Customer, so a missed dropdown is detectable.",
+    "The requested credit limit and monthly spend belong to the credit application, not to the CRM account record; copying them in counts as an unsupported value."
+  ],
+  "variant_note": "length variant x2 of crm_01"
+}

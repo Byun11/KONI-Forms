@@ -1,0 +1,23 @@
+{
+  "doc": "crm_02x1",
+  "pages": 28,
+  "words": 8684,
+  "paragraphs_nonempty": 241,
+  "tables": 54,
+  "table_rows": 305,
+  "form_first_page": 16,
+  "specimen_first_page": 13,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "crm specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 13
+  },
+  "sha256_docx": "a3516c159c610f173ae64e2e0ac392fc3e88c2c8d8f6a3530e86c7bda625f8a7",
+  "sha256_pdf": "78a440b3cc4646e3b85ae522761a5dafa8e718b382c924914fcb7c66a29901a9",
+  "sha256_gold": "61009ab1d94fd4f8e8d14bc065a1a3848a1c6f3468b66a66a8d4da56b7e3253c",
+  "long_variant_of": "crm_02",
+  "option_list_mentions_outside_form": {
+    "Partner": 13,
+    "Software": 2
+  }
+}

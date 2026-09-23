@@ -1,0 +1,29 @@
+# KONI-Forms evaluation: InsClaim on :8002 with the backend also published on :8005
+# (score.py DOMAINS["insurance"] reads state straight from 8005 while the
+# agent drives 8002; cookies are seeded on both origins).
+services:
+  backend:
+    build:
+      context: ../insurance_claim_web/backend
+    environment:
+      - API_PREFIX=/api
+      - ENV=production
+      - CORS_ORIGINS=["http://localhost:8002","http://localhost:8005"]
+    expose:
+      - "8000"
+    ports:
+      - "8005:8000"
+    volumes:
+      - ../insurance_claim_web/STATE.md:/app/STATE.md:ro
+  frontend:
+    build:
+      context: ../insurance_claim_web/frontend
+    expose:
+      - "80"
+  nginx:
+    image: nginx:1.27-alpine
+    depends_on: [backend, frontend]
+    ports:
+      - "8002:80"
+    volumes:
+      - ./insurance-nginx.conf:/etc/nginx/nginx.conf:ro

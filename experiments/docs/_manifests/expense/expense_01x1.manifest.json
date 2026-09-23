@@ -1,0 +1,28 @@
+{
+  "doc": "expense_01x1",
+  "pages": 33,
+  "words": 10507,
+  "paragraphs_nonempty": 281,
+  "tables": 41,
+  "table_rows": 299,
+  "form_first_page": 20,
+  "specimen_first_page": 17,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "expense specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 40
+  },
+  "sha256_docx": "625455a0e71a6e777d773d394ca82d8902f9917114094208c892938f30489614",
+  "sha256_pdf": "e2f0557f5f2ac050d48b921fb3078799a5669304b0a44697c5f322d33a8c4827",
+  "sha256_gold": "5a4fea92c4e5c03a5e434108e3d08a8d07e1f8594ea156468579810e6d05fc36",
+  "long_variant_of": "expense_01",
+  "option_list_mentions_outside_form": {
+    "1.0000": 2,
+    "Conference - Other Conference Expenses": 2,
+    "Travelling - Accommodation": 3,
+    "Travelling - Airfare (Basic Economy Class)": 3,
+    "Travelling - Other Travelling Expenses": 1,
+    "Travelling - Subsistence Allowance": 3,
+    "United States - San Diego": 2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "doc": "insurance_01x1",
+  "pages": 36,
+  "words": 11888,
+  "paragraphs_nonempty": 297,
+  "tables": 57,
+  "table_rows": 302,
+  "form_first_page": 22,
+  "specimen_first_page": 19,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "insurance specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 13,
+    "MUST_BE_EMPTY": 8,
+    "USER_ONLY": 2
+  },
+  "sha256_docx": "01e8a57ba939f5020f17f246d63d473e104df31632da42e0c766cbfcac9aa7e6",
+  "sha256_pdf": "bc7b314f10f69571d2e8e1e32833170cf3eb1242d1f8a8d2506355526ddaf533",
+  "sha256_gold": "adc943aa2e8950799526647c39496e8e2c89dd9527291c10496888ba3a07beb3",
+  "long_variant_of": "insurance_01",
+  "option_list_mentions_outside_form": {}
+}

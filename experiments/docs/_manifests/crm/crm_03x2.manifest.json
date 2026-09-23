@@ -1,0 +1,26 @@
+{
+  "doc": "crm_03x2",
+  "pages": 44,
+  "words": 17202,
+  "paragraphs_nonempty": 377,
+  "tables": 61,
+  "table_rows": 348,
+  "form_first_page": 25,
+  "specimen_first_page": 22,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the 28-36-page original",
+  "gold_modes": {
+    "AUTO": 10,
+    "ASK_USER": 3
+  },
+  "sha256_docx": "66a9625a38b8ad2e93b6d08f0b734605737ebda8a16b1f73cf08638f7e35d6b9",
+  "sha256_pdf": "fdf02d14f23741a43c4a1a6e359c88c105778baa35102d546848e9cdef10da42",
+  "sha256_gold": "35362ca4dd64a1d782d4633c005298038fea7b3d814758a28120f7e3113c2672",
+  "scaled_from": "crm_13",
+  "scale": "x2",
+  "padding_chunks": [
+    "A"
+  ],
+  "text_path_chars": 112547,
+  "top_level_tables": 61
+}

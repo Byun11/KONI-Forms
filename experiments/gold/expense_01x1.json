@@ -1,0 +1,257 @@
+{
+  "doc": "docs/expense/expense_01x1.docx",
+  "domain": "expense",
+  "state_root": "data.expenseflow.local_storage",
+  "fields": [
+    {
+      "field_id": "expenseHeader.employeeName",
+      "label": "Name of Claimant (as held on the staff record)",
+      "expected": "Chan Tai Man",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseHeader.reimbursementCurrency",
+      "label": "Reimbursement Currency",
+      "expected": "HKD",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseHeader.template",
+      "label": "Expense Template",
+      "expected": "Overseas_Travelling",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseHeader.expenseDescription",
+      "label": "Reason for payment / Justification of expense claim",
+      "expected": "Presentation of accepted paper at the 39th Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego.",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseHeader.costCenter",
+      "label": "Cost Centre to be charged",
+      "expected": "14700",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.receiptDate",
+      "label": "Analysis of Expenditure row 1 — Expenditure Date",
+      "expected": "06-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.expenseType",
+      "label": "Analysis of Expenditure row 1 — Expense Type",
+      "expected": "Travelling - Airfare (Basic Economy Class)",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.description",
+      "label": "Analysis of Expenditure row 1 — Details of expenditure",
+      "expected": "Return economy airfare HKG-SAN, Cathay Pacific",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.receiptCurrency",
+      "label": "Analysis of Expenditure row 1 — Currency",
+      "expected": "HKD",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.receiptAmount",
+      "label": "Analysis of Expenditure row 1 — Amount (foreign currency)",
+      "expected": "9,480.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.exchangeRate",
+      "label": "Analysis of Expenditure row 1 — Exchange Rate",
+      "expected": "1.0000",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.1.reimbAmount",
+      "label": "Analysis of Expenditure row 1 — Amount HKD",
+      "expected": "9,480.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.receiptDate",
+      "label": "Analysis of Expenditure row 2 — Expenditure Date",
+      "expected": "07-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.expenseType",
+      "label": "Analysis of Expenditure row 2 — Expense Type",
+      "expected": "Conference - Other Conference Expenses",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.description",
+      "label": "Analysis of Expenditure row 2 — Details of expenditure",
+      "expected": "NeurIPS 2025 conference registration (early bird)",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.receiptCurrency",
+      "label": "Analysis of Expenditure row 2 — Currency",
+      "expected": "USD",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.receiptAmount",
+      "label": "Analysis of Expenditure row 2 — Amount (foreign currency)",
+      "expected": "650.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.exchangeRate",
+      "label": "Analysis of Expenditure row 2 — Exchange Rate",
+      "expected": "7.8100",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.2.reimbAmount",
+      "label": "Analysis of Expenditure row 2 — Amount HKD",
+      "expected": "5,076.50",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.receiptDate",
+      "label": "Analysis of Expenditure row 3 — Expenditure Date",
+      "expected": "07-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.expenseType",
+      "label": "Analysis of Expenditure row 3 — Expense Type",
+      "expected": "Travelling - Accommodation",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.description",
+      "label": "Analysis of Expenditure row 3 — Details of expenditure",
+      "expected": "Marriott Marquis San Diego, 4 nights",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.receiptCurrency",
+      "label": "Analysis of Expenditure row 3 — Currency",
+      "expected": "USD",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.receiptAmount",
+      "label": "Analysis of Expenditure row 3 — Amount (foreign currency)",
+      "expected": "1,196.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.exchangeRate",
+      "label": "Analysis of Expenditure row 3 — Exchange Rate",
+      "expected": "7.8100",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.3.reimbAmount",
+      "label": "Analysis of Expenditure row 3 — Amount HKD",
+      "expected": "9,340.76",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.receiptDate",
+      "label": "Analysis of Expenditure row 4 — Expenditure Date",
+      "expected": "11-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.expenseType",
+      "label": "Analysis of Expenditure row 4 — Expense Type",
+      "expected": "Travelling - Other Travelling Expenses",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.description",
+      "label": "Analysis of Expenditure row 4 — Details of expenditure",
+      "expected": "Airport transfer, both directions",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.receiptCurrency",
+      "label": "Analysis of Expenditure row 4 — Currency",
+      "expected": "USD",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.receiptAmount",
+      "label": "Analysis of Expenditure row 4 — Amount (foreign currency)",
+      "expected": "88.00",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.exchangeRate",
+      "label": "Analysis of Expenditure row 4 — Exchange Rate",
+      "expected": "7.8100",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "expenseLines.4.reimbAmount",
+      "label": "Analysis of Expenditure row 4 — Amount HKD",
+      "expected": "687.28",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.expenseType",
+      "label": "Subsistence row 1 — Expense Type",
+      "expected": "Travelling - Subsistence Allowance",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.startDate",
+      "label": "Subsistence row 1 — From",
+      "expected": "07-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.endDate",
+      "label": "Subsistence row 1 — To",
+      "expected": "11-OCT-2025",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.destination",
+      "label": "Subsistence row 1 — Destination",
+      "expected": "United States - San Diego",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.description",
+      "label": "Subsistence row 1 — Details of expenditure",
+      "expected": "Meals and incidentals, conference days",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.nights",
+      "label": "Subsistence row 1 — Nights",
+      "expected": "4",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "perDiemLines.1.reimbAmount",
+      "label": "Subsistence row 1 — Amount HKD",
+      "expected": "2,560.00",
+      "mode": "AUTO"
+    }
+  ],
+  "totals_for_reference": {
+    "receipts_hkd": 24584.54,
+    "per_diem_hkd": 2560.0
+  },
+  "notes": [
+    "The Summary of Claim aggregates by pre-printed category; the per-item values live in the Analysis of Expenditure table.",
+    "Amounts are split across an HKD column and a cents column.",
+    "ExpenseFlow's Review screen offers an attachment upload, but neither the document nor the task asks for one, so it is not scored."
+  ],
+  "variant_note": "length variant x1 of expense_01; built as expense_11"
+}

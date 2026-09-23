@@ -1,0 +1,161 @@
+{
+  "doc": "docs/insurance/insurance_01.docx",
+  "domain": "insurance",
+  "state_root": "data.current_claim.formData",
+  "fields": [
+    {
+      "field_id": "insured-name",
+      "label": "Insured Person Name",
+      "expected": "Cheung Wai Lam",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "id-type",
+      "label": "ID Type",
+      "expected": "national-id",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "id-number",
+      "label": "ID Number",
+      "expected": "K7742318",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "phone",
+      "label": "Phone Number",
+      "expected": "9284 5510",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "accident-time",
+      "label": "Incident Time",
+      "expected": "2026-01-14",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "accident-situation",
+      "label": "Nature of Claim",
+      "expected": "traffic-accident",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "traffic-location",
+      "label": "Accident Location",
+      "expected": "Junction of Tai Po Road and Kwong Fuk Road, Tai Po",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "traffic-motor",
+      "label": "Motor Vehicle Involved",
+      "expected": "yes",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "traffic-police-report",
+      "label": "Police Report Number",
+      "expected": "TP/2026/000417",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "payee-name",
+      "label": "Payee Name",
+      "expected": "Cheung Wai Lam",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "payee-phone",
+      "label": "Payee Phone Number",
+      "expected": "9284 5510",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "account-relationship",
+      "label": "Relationship to Insured",
+      "expected": "self",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "bank-card",
+      "label": "Bank Card Number",
+      "expected": "024-889201-883",
+      "mode": "AUTO"
+    },
+    {
+      "field_id": "illness-hospital",
+      "label": "Diagnosis Hospital",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the ordinary-illness branch, which this claim did not select"
+    },
+    {
+      "field_id": "illness-summary",
+      "label": "Diagnosis Summary",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the ordinary-illness branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-hospital",
+      "label": "Diagnosis Hospital",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-injury-area",
+      "label": "Injury Area",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-summary",
+      "label": "Diagnosis Summary",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-examination-fee",
+      "label": "Examination and Treatment Fee",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-medication-fee",
+      "label": "Medication Fee",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "common-service-fee",
+      "label": "Medical Service Fee",
+      "expected": null,
+      "mode": "MUST_BE_EMPTY",
+      "reason": "belongs to the common-accident branch, which this claim did not select"
+    },
+    {
+      "field_id": "file-input",
+      "label": "Upload supporting documents",
+      "expected": null,
+      "mode": "USER_ONLY",
+      "reason": "The extension has no file-upload action; builder.ts only reports that an element is a file uploader."
+    },
+    {
+      "field_id": "signature-canvas",
+      "label": "Signature",
+      "expected": null,
+      "mode": "USER_ONLY",
+      "reason": "Drawing on a canvas is outside the action space."
+    }
+  ],
+  "notes": [
+    "The incident date is entered one glyph per box as DD/MM/YYYY; the web field is an HTML date input and needs YYYY-MM-DD.",
+    "Fee fields are numeric inputs: thousands separators must be dropped.",
+    "Sections C(1), C(2) and C(3) are three branches; only the one matching the ticked Nature of Claim carries values. Filling a shaded branch counts as an unsupported value.",
+    "'Not Applicable' is pre-printed in structurally void cells and must not be copied into the web form."
+  ]
+}

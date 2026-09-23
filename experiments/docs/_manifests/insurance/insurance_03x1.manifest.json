@@ -1,0 +1,25 @@
+{
+  "doc": "insurance_03x1",
+  "pages": 36,
+  "words": 11914,
+  "paragraphs_nonempty": 298,
+  "tables": 57,
+  "table_rows": 302,
+  "form_first_page": 22,
+  "specimen_first_page": 19,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "insurance specimen form with the same layout and fictitious values",
+  "gold_modes": {
+    "AUTO": 16,
+    "ASK_USER": 1,
+    "MUST_BE_EMPTY": 5,
+    "USER_ONLY": 2
+  },
+  "sha256_docx": "54f3c2043b1b248cf7b0d0457fffe394ce7d9fb129a4706644282c2afdea76da",
+  "sha256_pdf": "a876f6bb45987a80fba759c44a07220c3a60fb18e5db2f9435608331b6da26e8",
+  "sha256_gold": "c7537af5ab59b4e89faa1ba12c410c5959a86772c626387e5c905a1695ef29bf",
+  "long_variant_of": "insurance_03",
+  "option_list_mentions_outside_form": {
+    "Yan Chai Hospital": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "doc": "expense_03x2",
+  "pages": 51,
+  "words": 20736,
+  "paragraphs_nonempty": 447,
+  "tables": 44,
+  "table_rows": 318,
+  "form_first_page": 30,
+  "specimen_first_page": 27,
+  "gold_value_mentions_outside_form": {
+    "Meals and incidentals": 1
+  },
+  "hard_negative": "same specimen form as the 28-36-page original",
+  "gold_modes": {
+    "AUTO": 32,
+    "ASK_USER": 1
+  },
+  "sha256_docx": "4148a3493718e51488c964fe33dcd3cd706f4bcbc2cf5760df8f0cdbac6dd803",
+  "sha256_pdf": "4d172769b3baa651c0c6905f075a101116cf7f2f45175a214a64a30380952675",
+  "sha256_gold": "3bff22154064cc26edaf337cbcc2e956cb141beab9ca9c82968971adb42ecef1",
+  "scaled_from": "expense_13",
+  "scale": "x2",
+  "padding_chunks": [
+    "A"
+  ],
+  "text_path_chars": 132145,
+  "top_level_tables": 44
+}

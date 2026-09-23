@@ -1,0 +1,27 @@
+{
+  "doc": "insurance_01x2",
+  "pages": 57,
+  "words": 23666,
+  "paragraphs_nonempty": 525,
+  "tables": 59,
+  "table_rows": 313,
+  "form_first_page": 34,
+  "specimen_first_page": 31,
+  "gold_value_mentions_outside_form": {},
+  "hard_negative": "same specimen form as the 28-36-page original",
+  "gold_modes": {
+    "AUTO": 13,
+    "MUST_BE_EMPTY": 8,
+    "USER_ONLY": 2
+  },
+  "sha256_docx": "7e33abef7540bc37bd978106ea7221524490151a50a1452ced1b285561101acb",
+  "sha256_pdf": "2957857357d0aa1ec54c348dfc7e807332d97b0916a2bf85ad424b84aba2fa7d",
+  "sha256_gold": "c3ca5c7eda1dfa25d49445aef3c6bb894142f832ebfc2dbefcc57f66acaf9483",
+  "scaled_from": "insurance_11",
+  "scale": "x2",
+  "padding_chunks": [
+    "A"
+  ],
+  "text_path_chars": 151110,
+  "top_level_tables": 59
+}
